@@ -20,6 +20,6 @@ El repositorio público muestra en la rama `main` los proyectos `despliegue01` y
 
 La configuración de los dos Web Services y sus registros confirman la instalación con Yarn, el arranque mediante `yarn start` y la finalización exitosa del despliegue.
 
-## 6. Proyecto anterior publicado
+## 6. Tarea: portafolio publicado
 
-La interfaz del proyecto Express + EJS de semanas anteriores funciona desde su dirección pública, conservando las rutas Inicio, Acerca de, Servicios y Contacto.
+El portafolio profesional de Luis Washington Berrio Valencia funciona desde su dirección pública y muestra su interfaz responsive, navegación y presentación principal. Se creó como proyecto nuevo porque no se encontró el proyecto web de CV de la semana 2; su contenido parte del CV real disponible.

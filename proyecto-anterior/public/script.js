@@ -1,0 +1,11 @@
+const menuButton = document.querySelector('.menu-button');
+const menu = document.querySelector('.nav-links');
+const navLinks = [...document.querySelectorAll('.nav-links a')];
+menuButton.addEventListener('click', () => { const isOpen = menu.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(isOpen)); menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú'); });
+navLinks.forEach((link) => link.addEventListener('click', () => { menu.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }));
+const revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible'); }), { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+const sections = [...document.querySelectorAll('main section[id]')];
+const sectionObserver = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) navLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`)); }), { rootMargin: '-35% 0px -55%' });
+sections.forEach((section) => sectionObserver.observe(section));
+document.querySelector('#year').textContent = new Date().getFullYear();

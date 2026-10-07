@@ -2,7 +2,7 @@
 
 ## 0:00–0:25 | Presentación
 
-“En este laboratorio implementé el despliegue de dos aplicaciones Node.js: el ejemplo `despliegue01` y un proyecto Express con EJS desarrollado anteriormente. Ambos están versionados con Git, administrados con Yarn y preparados para Render.”
+“En este laboratorio implementé el despliegue de dos aplicaciones Node.js: el ejemplo `despliegue01` y un portafolio profesional basado en mi CV. No encontré el proyecto web de CV de semana 2, por lo que el portafolio se creó como proyecto nuevo y se documentó de manera transparente.”
 
 ## 0:25–1:10 | Código principal
 
@@ -22,7 +22,7 @@
 
 ## 3:05–3:40 | Tarea final
 
-“Para la tarea seleccioné el proyecto Express y EJS de una semana anterior. Conservé las páginas Inicio, Acerca de, Servicios y Contacto, y adapté únicamente el puerto y los scripts para producción. Esta es la interfaz funcionando desde la URL pública.”
+“Para la tarea desarrollé un portafolio de Luis Washington Berrio Valencia con las secciones Inicio, Sobre mí, Habilidades, Proyectos y Contacto. Es responsive y usa HTML, CSS y JavaScript servido por Express. Los proyectos y canales de contacto mostrados están respaldados por archivos locales o por el CV. No incorporé foto, niveles porcentuales ni un formulario de envío inexistente. Esta es la interfaz funcionando desde la URL pública.”
 
 ## 3:40–4:00 | Cierre
 

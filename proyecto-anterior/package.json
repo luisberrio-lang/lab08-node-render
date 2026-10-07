@@ -1,5 +1,5 @@
 {
-  "name": "mi-sitio-express",
+  "name": "portafolio-luis-berrio",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Portafolio profesional de Luis Washington Berrio Valencia",
   "dependencies": {
     "dotenv": "^17.2.3",
     "ejs": "^6.0.1",

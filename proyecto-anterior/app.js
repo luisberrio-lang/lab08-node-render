@@ -1,27 +1,10 @@
-const express = require("express");
+require('dotenv').config();
+const express = require('express');
+const path = require('path');
 const app = express();
-const path = require("path");
-require("dotenv").config();
-
-// Configurar el motor de vistas
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-
-// Servir archivos estáticos desde "public"
-app.use(express.static(path.join(__dirname, "public")));
-
-// Importar rutas
-app.use(express.urlencoded({ extended: true }));
-
-const mainRoutes = require("./routes/mainRoutes");
-app.use("/", mainRoutes);
-
-app.use((req, res) => {
-    res.status(404).render("404");
-});
-
-// Iniciar el servidor
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, "0.0.0.0", () =>
-    console.log(`Servidor en http://localhost:${PORT}`)
-);
+app.disable('x-powered-by');
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/health', (_req, res) => res.status(200).json({ status: 'ok', service: 'portfolio-luis-berrio' }));
+app.get('*path', (_req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
+app.listen(PORT, '0.0.0.0', () => console.log(`Portafolio activo en http://localhost:${PORT}`));
