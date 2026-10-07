@@ -1,0 +1,21 @@
+{
+  "name": "despliegue01",
+  "version": "1.0.0",
+  "description": "Laboratorio 08: despliegue de un servidor Node.js en Render",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "license": "MIT"
+}
