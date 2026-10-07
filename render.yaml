@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: lab08-despliegue01
+    runtime: node
+    plan: free
+    rootDir: despliegue01
+    buildCommand: yarn install --frozen-lockfile
+    startCommand: yarn start
+    healthCheckPath: /
+    autoDeployTrigger: commit
+
+  - type: web
+    name: lab08-proyecto-anterior
+    runtime: node
+    plan: free
+    rootDir: proyecto-anterior
+    buildCommand: yarn install --frozen-lockfile
+    startCommand: yarn start
+    healthCheckPath: /
+    autoDeployTrigger: commit

@@ -1,0 +1,33 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:#07111f;color:#dce9f7;font-family:Segoe UI,Arial,sans-serif}.page{width:1600px;height:900px;padding:38px 48px;overflow:hidden}.eyebrow{color:#63ddb4;letter-spacing:.16em;font-size:15px;font-weight:800}.title{font-size:32px;margin:8px 0 24px}.panel{background:#0d1d30;border:1px solid #29445f;border-radius:16px;overflow:hidden;box-shadow:0 18px 55px #0007}.bar{height:42px;background:#13283e;border-bottom:1px solid #29445f;display:flex;align-items:center;padding:0 18px;color:#91a8bd}.dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:8px}.r{background:#ff6b6b}.y{background:#ffd166}.g{background:#65d6ad}pre{margin:0;padding:24px 28px;font:17px/1.52 Consolas,monospace;white-space:pre-wrap}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.label{color:#65d6ad;font-weight:800}.browser{height:630px;background:white}.browserbar{height:52px;background:#eef2f6;color:#35495d;padding:12px 20px;font-size:16px}.browser iframe{border:0;width:100%;height:578px}.terminal{height:630px;background:#07101b}.terminal pre{font-size:16px;color:#d9f3e9}</style></head><body><main class="page"><div class="eyebrow">LABORATORIO 08 · EVIDENCIA REAL</div><h1 class="title">Configuración de Yarn, scripts y exclusiones</h1><div class="grid"><section class="panel"><div class="bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i>package.json</div><pre>{
+  "name": "despliegue01",
+  "version": "1.0.0",
+  "description": "Laboratorio 08: despliegue de un servidor Node.js en Render",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": "&gt;=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "license": "MIT"
+}
+</pre></section><section class="panel"><div class="bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i>.gitignore</div><pre>node_modules/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+</pre><div class="bar">Verificación</div><pre><span class="label">Yarn:</span> 1.22.22
+<span class="label">Lockfile:</span> yarn.lock generado
+<span class="label">.env:</span> excluido de Git
+<span class="label">Puerto:</span> documentado en .env.example</pre></section></div></main></body></html>
