@@ -14,7 +14,7 @@ La aplicación `despliegue01` responde correctamente en `localhost:3000`. A la d
 
 ## 4. Repositorio en GitHub
 
-El repositorio público muestra en la rama `main` los proyectos `despliegue01` y `proyecto-anterior`, el archivo `render.yaml` y la documentación del laboratorio.
+El repositorio público `luisberrio-lang/lab08-node-render` muestra en la rama `main` los proyectos `despliegue01` y `proyecto-anterior`, el archivo `render.yaml`, el README actualizado y el historial de commits.
 
 ## 5. Despliegue en Render
 

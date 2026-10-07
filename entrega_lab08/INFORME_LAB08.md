@@ -24,8 +24,9 @@ Preparar, versionar y desplegar una aplicación Node.js, y publicar además un p
 - `proyecto-anterior`: portafolio nuevo con HTTP 200 en `/`, `/health`, `/styles.css`, `/script.js` y rutas internas; validación sintáctica aprobada.
 - Responsive: revisión visual real en 1440×900 y 500×900; navegación, textos, botones y tarjeta principal se muestran sin recortes.
 - Git: rama `main` con tres commits de implementación antes de la documentación final.
+- GitHub: repositorio público verificado en `https://github.com/luisberrio-lang/lab08-node-render`, remoto denominado `github` y rama `main` publicada correctamente.
 - Evidencia local: capturas 01, 02 y 03 generadas a 1600×900 y revisadas visualmente.
-- Publicación: pendiente de acceso autenticado al navegador para GitHub y Render. Las URL y capturas 04–06 se incorporarán únicamente después de verificarlas en línea.
+- Render: pendiente de creación manual de los dos Web Services en la sesión autenticada del usuario. Las URL y capturas 05–06 se incorporarán únicamente después de verificarlas en línea.
 
 ## Observaciones
 
